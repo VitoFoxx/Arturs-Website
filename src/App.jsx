@@ -46,6 +46,7 @@ function useSEOHead() {
     }
     canonical.href = 'https://silikon-service-dortmann.de'
   }, [])
+}
 
 gsap.registerPlugin(ScrollTrigger)
 

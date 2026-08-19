@@ -13,9 +13,13 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          gsap: ['gsap'],
-          react: ['react', 'react-dom'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules/gsap')) {
+            return 'gsap'
+          }
+          if (id.includes('node_modules/react')) {
+            return 'react'
+          }
         },
         entryFileNames: 'js/[name]-[hash].js',
         chunkFileNames: 'js/[name]-[hash].js',

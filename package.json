@@ -1,7 +1,8 @@
 {
-  "name": "1st-project-irinas-website",
+  "name": "silikon-service-dortmann",
   "version": "1.0.0",
-  "description": "",
+  "description": "Premium handwerker website for Silikon-Service-Dortmann",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -20,12 +21,17 @@
   },
   "homepage": "https://github.com/VitoFoxx/1st-Project-Irinas-Website#readme",
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
     "@vitejs/plugin-react": "^6.0.5",
     "autoprefixer": "^10.5.4",
     "postcss": "^8.5.26",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "tailwindcss": "^4.3.3",
+    "terser": "^5.50.0",
     "vite": "^8.2.1"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
   }
 }
